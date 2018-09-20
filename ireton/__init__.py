@@ -1,10 +1,10 @@
-import functools
 import inspect
 
 
 def require(check, err_message):
     if not check:
         raise ValueError(err_message)
+
 
 def parametrize(test_values):
     def parametrize_decorator(func):
@@ -26,5 +26,5 @@ def parametrize(test_values):
         if len(errors) != 0:
             raise AssertionError("\n" + "\n".join(map(str, errors)))
         return func
-    return parametrize_decorator
 
+    return parametrize_decorator
