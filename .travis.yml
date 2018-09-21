@@ -3,3 +3,11 @@ python:
   - "3.6"
 script:
   - "python run_tests.py"
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  on:
+    branch:
+      - master
+  user: ratatat
+  password: "${PYPI}"

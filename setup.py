@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='ireton',
-      version='0.2',
+      version='0.2.1',
       description='testing tools',
       url='https://github.com/rjsvaljean/python-testing-tools',
       author='ratatat',
