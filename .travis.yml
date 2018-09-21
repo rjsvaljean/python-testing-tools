@@ -10,4 +10,4 @@ deploy:
     branch:
       - master
   user: ratatat
-  password: "${PYPI}"
+  password: "${PYPI_PASSWORD}"
